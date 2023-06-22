@@ -56,3 +56,27 @@ for (let i = 0; i <= longText.length; i++) {
     }
 }
 console.log(count);
+
+//Bonus 2
+
+const phraseToCheck = 'Amor Roma';
+let palindrome = [];
+let reversePalindrome = [];
+for (let i = 0; i < phraseToCheck.length; i++) {
+    palindrome.push(phraseToCheck[i].toLowerCase());
+}
+console.log(palindrome);
+
+for (let j = phraseToCheck.length - 1; j >= 0; j--) {
+    reversePalindrome.push(phraseToCheck[j].toLowerCase())
+}
+console.log(reversePalindrome);
+
+if (palindrome.toString() === reversePalindrome.toString()) {
+    console.log('This is a palindrome!')
+} else {
+    console.log('This is NOT a palindrome')
+}
+
+
+
